@@ -1,0 +1,357 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'sf_pro_textregular',Arial,Helvetica,sans-serif;
+}
+
+/* img{
+    loading:lazy;
+} */
+
+#mainbox{
+    width:100%;
+}
+
+#headbox{
+    display:flex;
+    padding:0 4rem 0.2rem 0 ;
+    width: 70%;
+    z-index: 1;
+    top:0;
+    padding-top: 0.5rem;
+    padding-right:5vw;
+    justify-content:space-between;
+    align-items:center;
+    height:8vh;
+    z-index: 1;
+    margin: auto;
+    background:transparent;
+    border-bottom:1px solid rgba(245, 245, 245, 0.516);
+}
+
+#logo{
+    height:90%;
+}
+
+.menua{
+    color:black;
+    font-weight:600;
+    text-decoration:none;
+    font-family:'sf_pro_textregular',Arial,Helvetica,sans-serif;
+    font-size:1.3vw;;
+    padding-left:4vw;
+}
+
+#menubox{
+    display:flex;
+}
+
+#logobox{
+    height:99%;
+}
+
+#bannerbox{
+    height:103vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top: -3.8rem;
+    background-size:100vh 100%;
+}
+
+/* #bannerbox img{
+    width:100%;
+    object-fit: cover;
+    z-index:-1;
+    position:absolute;
+    top:0;
+    left:0;
+} */
+
+#bannerbox h1{
+    font-size:3rem;
+    color:rgb(30,7,0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:900;
+    text-shadow:2px 0px 7px white;
+}
+
+#bannerbox #lowerheading{
+    font-size:4rem;
+}
+
+
+
+.arrow{
+    height:10vh;
+    cursor:pointer;
+    transition:0.1s;
+}
+
+
+
+#right{
+    border:black solid 2px;
+    border-radius:14px;
+}
+
+#left{
+    border:black solid 2px;
+    border-radius:14px;
+}
+
+
+#frame{
+    width:70%;
+    height:70vh;
+    overflow:auto;
+    border-radius:4vh;
+    box-shadow:-2px 0px 7px black,2px 0px 7px black; 
+    /* transition: all 0.8s ease 0s; 
+    transform: translate3d(1px, 0px, 0px);  */
+    /* width: 20800px; */
+}
+
+.menua:hover{
+    color:#fd7e14;
+}
+
+#left:hover{
+    transform:scale(1.2);
+}
+
+#right:hover{
+    transform:scale(1.2);
+}
+
+#footer{
+    background-color:#232F3E;
+    height:30vh;
+    width:100%;
+    padding:5vh 8vw;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer3{
+    background-color: #131A22;
+    height:15vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#linkedin{
+    height:5vh;
+}
+
+#linkedina{
+    padding-right:2vw;
+}
+
+#x{
+    height:5vh;
+}
+
+#footer3{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:3vw;
+}
+
+#footer3 img{
+    height:6vh;
+}
+
+#footer3 p{
+    font-size:1.1rem;
+    color:white;
+}
+
+#footer2{
+    height:40vh;
+    width:100%;
+    background-color: #232F3E;
+    color:#DDDDDD;
+    border-top:2px solid #3A4553;
+    display:flex;
+    padding:4vh 8vw;
+    padding-right:30vw;
+    justify-content: space-between;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#footer2 img{
+    height:15vh;
+}
+
+#festbox{
+    width:100%;
+    height:400vh;
+    display:flex;
+    border-top:2px solid rgb(91, 90, 90);
+    flex-direction:column;
+    justify-content: space-evenly;
+    padding-bottom:10vh;
+    border-bottom:5px solid rgb(77, 76, 76);
+    align-items:center;
+    background-color:rgb(213, 227, 236);
+
+}
+
+#festtitle{
+    color:#4c4c4c;
+    font-size:2.4rem;
+    text-shadow:0px 0px 5px black,0px 0px rgb(124, 121, 121),-0.1px -0.1px rgba(170, 170, 170, 0);
+    font-weight: 300;
+}
+
+.fest{
+    width:80%;
+    background-color:white;
+    height:20%;
+    border-radius:3vh;
+    display:flex;
+}
+
+.fest img{
+    width:56%;
+    height:100%;
+    object-fit: cover;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+.festtext{
+    width:44%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    padding:5vh 4vw;
+    text-align: justify;
+}
+
+.festtext h1{
+    color:orangered;
+}
+
+.festtext p{    
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#experiencebox{
+    height:200vh;
+    width:100%;
+    padding:1vh;
+    padding-top:3vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: nowrap; */
+    background-color:#F8EDED;
+    width:100%;
+}
+
+#experienceframe{
+    height: 32%;
+    padding-top:35vh;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    padding-left:10vw;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    animation:exp 30s linear infinite 0.5s;
+}
+
+@keyframes exp{
+    0%{
+        background-image:url(https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/somnath-temple/somnath-temple-banner.jpg);
+        background-size:cover;
+    }
+    20%{
+        background-image:url(https://www.gujarattourism.com/content/dam/gujrattourism/images/june/Dandi-Kutir-Museum-banner.jpg);
+        background-size:cover;
+    }
+    40%{
+        background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/laxmi-vilas-palace/Laxmi-Vilas-Palace-Banner1.jpg);
+        background-size:cover;
+    }
+    60%{
+        background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/home_page/opti/SOU-Banner.jpg);
+        background-size:cover;
+    }
+    80%{
+        background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/sun-temple/Sun-Temple-Banner.jpg);
+        background-size:cover;
+    }
+    100%{
+        background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/somnath-temple/somnath-temple-banner.jpg);
+        background-size:cover;
+    }
+
+
+}
+
+#experienceframe h1{
+    font-size:8vh;
+    text-align:center;
+    /* align-self:center; */
+    /* top: 10%; */
+    color: white;
+    text-shadow:1px 1px 10px white;
+}
+
+#experiencecontent{
+    height:68%;
+    width:100%;
+    display:flex;
+}
+
+#experienceanchors h1{
+    padding-bottom:3vh;
+    padding-top:5vh;
+    color:#4c4c4c;
+    font-size:2.4rem;
+    text-shadow:0px 0px 5px black;
+}
+
+#experiencecontent img{
+    height:80%;
+}
+
+#experienceanchors{
+    padding-left:5vw;
+    display:flex;
+    height:100%;
+    width:40%;
+    flex-direction:column;
+    justify-content: space-evenly;
+    padding-left:5vw;
+}
+
+#experienceanchors a{
+    text-decoration:none;
+    font-size:1.2rem;
+    text-shadow:0px 0px 3px white;
+    color:rgb(80, 80, 80);
+}
+
+#experienceanchors a:hover{
+    color:#fd7e14;
+    transform:scale(1.005);
+}
+
+#map{
+    display:flex;
+}
+
+#map img{
+    align-self:center;
+}
