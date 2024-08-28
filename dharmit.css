@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  
+  /* Navigation Bar */
+  header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+  } */
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 150px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content li {
+    margin: 0;
+  }
+  
+  .dropdown-content a {
+    padding: 10px 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #777;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Video Section Styles */
+  .video-section {
+    margin-top: 20px;
+    background-color: #161515;
+  }
+  
+  .video-background {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  /* Slider Hero Section */
+  .slider-hero {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slides {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    animation: slide-animation 40s infinite;
+  }
+  
+  .slide {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  @keyframes slide-animation {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(0); }
+    20% { transform: translateX(-10%); }
+    30% { transform: translateX(-10%); }
+    40% { transform: translateX(-20%); }
+    50% { transform: translateX(-20%); }
+    60% { transform: translateX(-30%); }
+    70% { transform: translateX(-30%); }
+    80% { transform: translateX(-40%); }
+    90% { transform: translateX(-40%); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  
+  
+  
+  
+  
+  h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .fairs-festivals {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service-box {
+    width: 30%;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-box img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-box h3 {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .service-box p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+  }
+  
+  .location-date {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-box:hover img {
+    transform: scale(1.05);
+  }
+  
+  
+  
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .popular-spots {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .spots-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .arrow-left, .arrow-right {
+    cursor: pointer;
+    font-size: 30px;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .spots-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    width: 50%;
+  }
+  
+  .spot-box {
+    min-width: 300px;
+    height: 400px;
+    margin-right: 15px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .spot-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .spot-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .spot-overlay h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .spot-box:hover .spot-overlay {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .spot-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .gujarat-map {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .gujarat-map img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Hide scrollbars for cleaner look */
+  .spots-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .spots-wrapper {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
